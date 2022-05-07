@@ -1,21 +1,14 @@
 import './App.css';
-import Frase from './components/Frase';
-import HelloWorld from './components/HelloWorld';
-import List from './components/List';
-import Pessoa from './components/Pessoa';
-import SayMyName from './components/SayMyName';
+import Evento from './components/Evento';
+import Form from './components/Form';
 
 function App() {
-  const nome = "Oliveira";
-
   return (
     <div className="App">
-      <HelloWorld />
-      <Frase />
-      <SayMyName nome="Willy"/>
-      <SayMyName nome={nome}/>
-      <Pessoa nome="Willy" idade="25" profissao="Programador" foto="https://via.placeholder.com/150"/>
-      <List />
+      <h1>Testando Eventos</h1>
+      <Evento numero="1" />
+      <Evento numero="2" />
+      <Form />
     </div>
   );
 }
